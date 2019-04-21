@@ -1,0 +1,34 @@
+{
+  "name": "@magic-modules/gitbadges",
+  "version": "0.0.1",
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "start": "t -p",
+    "format": "f -w",
+    "test": "t",
+    "build": "NODE_ENV=production magic build",
+    "prod": "NODE_ENV=production magic build serve",
+    "dev": "magic dev",
+    "publish": "magic publish",
+    "connect": "magic connect"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magic-modules/gitbadges.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/magic-modules/gitbadges/issues"
+  },
+  "homepage": "https://github.com/magic-modules/gitbadges#readme",
+  "devDependencies": {
+    "@magic/core": "github:magic/core",
+    "@magic/test": "0.0.7",
+    "@magic-modules/pre": "github:magic-modules/pre"
+  }
+}
