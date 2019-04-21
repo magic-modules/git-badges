@@ -15,38 +15,39 @@ module.exports = () =>
     p('this is how we install npm modules from github.'),
     Pre.View(`npm install magic-modules/gitbadges`),
 
-      h2('require:'),
-      p('first add the component to the assets'),
-      Pre.View(`
+    h2('require:'),
+    p('first add the component to the assets'),
+    Pre.View(`
 // assets/index.js
 module.exports = {
   //...other exports
   GitBadges: require('@magic-modules/gitbadges'),
 }`),
-      h2('usage:'),
-      p('in a page/component, just pass the badge user/project string for those badges you want to show:'),
-      Pre.View(`
+    h2('usage:'),
+    p(
+      'in a page/component, just pass the badge user/project string for those badges you want to show:',
+    ),
+    Pre.View(`
 GitBadges({
-  travis: 'magic-modules/gitbadges',
-  npm: 'magic-modules/gitbadges',
-  coveralls: 'magic-modules/gitbadges',
-  appveyor: 'jaeh/gitbadges',
-  greenkeeper: 'magic-modules/gitbadges',
+  // show all badges,
+  // insert project into the various urls of the badges
+  project: 'user/project',
 
-  // optional
+  // optional if different to project above
+  // every one of this arguments can be false to hide a badge
+  npm: 'user/project' || false,
+  travis: 'user/project' || false,
+  coveralls: 'user/project' || false,
+  appveyor: 'user/project' || false,
+  greenkeeper: 'user/project' || false,
+
+  // optional, master is default value
   branch: 'master',
 })
 `),
     p('renders'),
     GitBadges({
-      travis: 'magic-modules/gitbadges',
-      npm: 'magic-modules/gitbadges',
-      coveralls: 'magic-modules/gitbadges',
+      project: 'magic-modules/gitbadges',
       appveyor: 'jaeh/gitbadges',
-      greenkeeper: 'magic-modules/gitbadges',
-
-      // optional
-      branch: 'master',
-    })
+    }),
   ])
-
