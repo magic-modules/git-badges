@@ -30,7 +30,7 @@ GitBadges({
   travis: 'magic-modules/gitbadges',
   npm: 'magic-modules/gitbadges',
   coveralls: 'magic-modules/gitbadges',
-  appveyor: { name: 'jaeh/gitbadges', id: '' },
+  appveyor: 'jaeh/gitbadges',
   greenkeeper: 'magic-modules/gitbadges',
 
   // optional
@@ -42,7 +42,7 @@ GitBadges({
       travis: 'magic-modules/gitbadges',
       npm: 'magic-modules/gitbadges',
       coveralls: 'magic-modules/gitbadges',
-      appveyor: { name: 'jaeh/gitbadges', id: '' },
+      appveyor: 'jaeh/gitbadges',
       greenkeeper: 'magic-modules/gitbadges',
 
       // optional
