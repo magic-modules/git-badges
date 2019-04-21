@@ -1,6 +1,6 @@
 ## @magic-modules/gitbadges
 
-git badges
+git badges for your project. you can see them right below this line of text.
 
 [![NPM version][npm-image]][npm-url]
 [![Linux Build Status][travis-image]][travis-url]
@@ -32,13 +32,19 @@ module.exports = {
 // in any component view
 const component = {
   View: () => GitBadges({
-    npm: 'user/project',
-    travis: 'user/project',
-    coveralls: 'user/project',
-    appveyor: { name: 'user/project', id: 'get this from appveyor' },
-    greenkeeper: 'user/project',
+    // shows npm, travis, coveralls appveyor and greenkeeper badges with this project
+    project: 'user/project',
 
     // optional
+    // (use if url to badge for one service is different to project above)
+    // every one of this arguments can be false to hide a certain badge
+    npm: 'user/project' || false,
+    travis: 'user/project' || false,
+    coveralls: 'user/project' || false,
+    appveyor: 'user/project' || false,
+    greenkeeper: 'user/project' || false,
+
+    // optional, master is default value
     branch: 'master',
   }),
 }
