@@ -26,8 +26,9 @@
   },
   "homepage": "https://github.com/magic-modules/gitbadges#readme",
   "devDependencies": {
+    "@magic-modules/pre": "github:magic-modules/pre",
+    "@magic-themes/docs": "github:magic-themes/docs",
     "@magic/core": "github:magic/core",
-    "@magic/test": "0.0.10",
-    "@magic-modules/pre": "github:magic-modules/pre"
+    "@magic/test": "0.0.10"
   }
 }
