@@ -7,7 +7,7 @@ module.exports = () =>
       ' GitBadges component. It shows a list of git badges for your projects.',
     ]),
 
-    h2('installation:'),
+    h2({ id: 'installation' }, 'installation'),
     p(
       'installation is done using npm. for now, all magic modules are living on github and not on npm.',
     ),
@@ -15,7 +15,7 @@ module.exports = () =>
     p('this is how we install npm modules from github.'),
     Pre.View(`npm install magic-modules/gitbadges`),
 
-    h2('require:'),
+    h2({ id: 'require' }, 'require'),
     p('first add the component to the assets'),
     Pre.View(`
 // assets/index.js
@@ -23,7 +23,7 @@ module.exports = {
   //...other exports
   GitBadges: require('@magic-modules/gitbadges'),
 }`),
-    h2('usage:'),
+    h2({ id: 'usage' }, 'usage'),
     p(
       'in a page/component, just pass the badge user/project string for those badges you want to show:',
     ),
