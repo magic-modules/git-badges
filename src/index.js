@@ -1,48 +1,44 @@
 const GitBadges = props => {
-  const { project = false } = props
   const {
-    npm = project,
-    travis = project,
-    appveyor = project,
-    coveralls = project,
-    greenkeeper = project,
+    project = false,
     branch = 'master',
   } = props
 
-  // show nothing if no badges could be shown anyways
-  if (!project && !npm && !travis && !appveyor && !coveralls && !greenkeeper) {
+  const urls = Object.entries({
+    npm: (v = project) => v && ({
+      to: `https://www.npmjs.com/package/@${v}`,
+      src: `https://img.shields.io/npm/v/@${v}.svg`,
+    }),
+    travis: (v = project) => v && ({
+      to: `https://travis-ci.com/${v}`,
+      src: `https://travis-ci.com/${v}.svg?branch=${branch}`,
+    }),
+    appveyor: (v = project) => v && ({
+      to: `https://ci.appveyor.com/project/${v}/branch/${branch}`,
+      src: `https://img.shields.io/appveyor/ci/${v}/${branch}.svg`,
+    }),
+    coveralls: (v = project) => v && ({
+      to: `https://coveralls.io/github/${v}`,
+      src: `https://coveralls.io/repos/github/${v}/badge.svg`,
+    }),
+    greenkeeper: (v = project) => v && ({
+      to: `https://greenkeeper.io`,
+      src: `https://badges.greenkeeper.io/${v}.svg`,
+    }),
+    snyk: (v = project) => v && ({
+      to: `https://snyk.io/test/github/${v}`,
+      src: `https://snyk.io/test/github/${v}/badge.svg`,
+    }),
+  })
+  .map(([name, fn]) => fn(props[name]))
+  .filter(a => a.to && a.src)
+
+    // no badges to show
+  if (!urls.length) {
     return
   }
 
-  const GitBadge = ({ to, src }) => li([Link({ to }, Img({ src: src }))])
-
-  return ul({ class: 'GitBadges' }, [
-    npm &&
-      GitBadge({
-        to: `https://www.npmjs.com/package/@${npm}`,
-        src: `https://img.shields.io/npm/v/@${npm}.svg`,
-      }),
-    travis &&
-      GitBadge({
-        to: `https://travis-ci.com/${travis}`,
-        src: `https://travis-ci.com/${travis}.svg?branch=${branch}`,
-      }),
-    appveyor &&
-      GitBadge({
-        to: `https://ci.appveyor.com/project/${appveyor}/branch/${branch}`,
-        src: `https://img.shields.io/appveyor/ci/${appveyor}/${branch}.svg`,
-      }),
-    coveralls &&
-      GitBadge({
-        to: `https://coveralls.io/github/${coveralls}`,
-        src: `https://coveralls.io/repos/github/${coveralls}/badge.svg`,
-      }),
-    greenkeeper &&
-      GitBadge({
-        to: `https://greenkeeper.io`,
-        src: `https://badges.greenkeeper.io/${greenkeeper}.svg`,
-      }),
-  ])
+  return ul({ class: 'GitBadges' }, urls.map(({ to, src }) => li([Link({ to }, Img({ src }))])))
 }
 
 GitBadges.style = {
