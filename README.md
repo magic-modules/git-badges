@@ -6,7 +6,21 @@ git badges for your project. you can see them right below this line of text.
 [![Linux Build Status][travis-image]][travis-url]
 [![Windows Build Status][appveyor-image]][appveyor-url]
 [![Coverage Status][coveralls-image]][coveralls-url]
-[![Greenkeeper badge](https://badges.greenkeeper.io/magic-modules/gitbadges.svg)](https://greenkeeper.io/)
+[![Greenkeeper badge][greenkeeper-image]][greenkeeper-url]
+[![Known Vulnerabilities][snyk-image]][snyk-url]
+
+[npm-image]: https://img.shields.io/npm/v/@magic-modules/gitbadges.svg
+[npm-url]: https://www.npmjs.com/package/@magic-modules/gitbadges
+[travis-image]: https://api.travis-ci.org/magic-modules/gitbadges.svg?branch=master
+[travis-url]: https://travis-ci.org/magic-modules/gitbadges
+[appveyor-image]: https://img.shields.io/appveyor/ci/jaeh/gitbadges/master.svg
+[appveyor-url]: https://ci.appveyor.com/project/jaeh/gitbadges/branch/master
+[coveralls-image]: https://coveralls.io/repos/github/magic-modules/gitbadges/badge.svg
+[coveralls-url]: https://coveralls.io/github/magic-modules/gitbadges
+[greenkeeper-image]: https://badges.greenkeeper.io/magic-modules/gitbadges.svg
+[greenkeeper-url]: https://badges.greenkeeper.io/magic-modules/gitbadges.svg
+[snyk-image]: https://snyk.io/test/github/magic-modules/gitbadges/badge.svg
+[snyk-url]: https://snyk.io/test/github/magic-modules/gitbadges
 
 #### install:
 ```bash
@@ -49,12 +63,3 @@ const component = {
   }),
 }
 ```
-
-[npm-image]: https://img.shields.io/npm/v/@magic-modules/gitbadges.svg
-[npm-url]: https://www.npmjs.com/package/@magic-modules/gitbadges
-[travis-image]: https://api.travis-ci.org/magic-modules/gitbadges.svg?branch=master
-[travis-url]: https://travis-ci.org/magic-modules/gitbadges
-[appveyor-image]: https://img.shields.io/appveyor/ci/jaeh/gitbadges/master.svg
-[appveyor-url]: https://ci.appveyor.com/project/jaeh/gitbadges/branch/master
-[coveralls-image]: https://coveralls.io/repos/github/magic-modules/gitbadges/badge.svg
-[coveralls-url]: https://coveralls.io/github/magic-modules/gitbadges
