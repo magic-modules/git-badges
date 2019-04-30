@@ -13,11 +13,11 @@ module.exports = () =>
     ),
     p('note the missing @ before magic-modules.'),
     p('this is how we install npm modules from github.'),
-    Pre.View(`npm install magic-modules/gitbadges`),
+    Pre(`npm install magic-modules/gitbadges`),
 
     h2({ id: 'require' }, 'require'),
     p('first add the component to the assets'),
-    Pre.View(`
+    Pre(`
 // assets/index.js
 module.exports = {
   //...other exports
@@ -27,7 +27,7 @@ module.exports = {
     p(
       'in a page/component, just pass the badge user/project string for those badges you want to show:',
     ),
-    Pre.View(`
+    Pre(`
 GitBadges({
   // show all badges,
   // insert project into the various urls of the badges
