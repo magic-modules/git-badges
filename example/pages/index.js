@@ -1,10 +1,10 @@
-module.exports = () =>
-  div([
-    h1('@magic-modules/gitbadges'),
+module.exports = state => [
+    h1(state.title),
     p([
       'this is the ',
       Link({ to: 'https://github.com/magic-modules' }, '@magic-modules'),
-      ' GitBadges component. It shows a list of git badges for your projects.',
+      ' GitBadges component. ',
+      state.description,
     ]),
 
     h2({ id: 'installation' }, 'installation'),
@@ -13,7 +13,7 @@ module.exports = () =>
     ),
     p('note the missing @ before magic-modules.'),
     p('this is how we install npm modules from github.'),
-    Pre(`npm install magic-modules/gitbadges`),
+    Pre(`npm install magic-modules/git-badges`),
 
     h2({ id: 'require' }, 'require'),
     p('first add the component to the assets'),
@@ -21,7 +21,7 @@ module.exports = () =>
 // assets/index.js
 module.exports = {
   //...other exports
-  GitBadges: require('@magic-modules/gitbadges'),
+  GitBadges: require('@magic-modules/git-badges'),
 }`),
     h2({ id: 'usage' }, 'usage'),
     p(
@@ -38,7 +38,7 @@ GitBadges({
   npm: 'user/project' || false,
   travis: 'user/project' || false,
   coveralls: 'user/project' || false,
-  appveyor: 'user/project' || false,
+  appveyor: 'user/project' || false, // - will automatically be removed from the user (appveyor needs that)
   greenkeeper: 'user/project' || false,
 
   // optional, master is default value
@@ -47,7 +47,6 @@ GitBadges({
 `),
     p('renders'),
     GitBadges({
-      project: 'magic-modules/gitbadges',
-      appveyor: 'jaeh/gitbadges',
+      project: 'magic-modules/git-badges',
     }),
-  ])
+  ]
