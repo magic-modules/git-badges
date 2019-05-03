@@ -3,6 +3,8 @@ const GitBadges = props => {
     props = {
       project: props,
     }
+  } else if (!props.project) {
+    return
   }
 
   const { project = false, branch = 'master' } = props
