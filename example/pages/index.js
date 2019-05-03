@@ -46,6 +46,13 @@ GitBadges({
 })
 `),
 
+  h2('gitlab / other git hosts'),
+  p([
+    'to use gitlab or any other git host in the urls that need a git host to be set,',
+    ' simply pass a host prop to the GitBadges module',
+  ]),
+  Pre("GitBages({ project: 'gitlab-org/gitlab-repo', host: 'gitlab' })"),
+
   h2({ id: 'demo' }, 'demo'),
   Pre("GitBadges('magic-modules/git-badges')"),
   p('renders'),
