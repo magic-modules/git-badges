@@ -1,4 +1,10 @@
 const GitBadges = props => {
+  if (typeof props === 'string') {
+    props = {
+      project: props,
+    }
+  }
+
   const {
     project = false,
     branch = 'master',
