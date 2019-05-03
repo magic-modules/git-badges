@@ -1,5 +1,5 @@
 {
-  "name": "@magic-modules/gitbadges",
+  "name": "@magic-modules/git-badges",
   "version": "0.0.1",
   "main": "src/index.js",
   "files": [
@@ -16,15 +16,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/magic-modules/gitbadges.git"
+    "url": "git+https://github.com/magic-modules/git-badges.git"
   },
   "keywords": [],
   "author": "",
   "license": "AGPL-3.0",
   "bugs": {
-    "url": "https://github.com/magic-modules/gitbadges/issues"
+    "url": "https://github.com/magic-modules/git-badges/issues"
   },
-  "homepage": "https://github.com/magic-modules/gitbadges#readme",
+  "homepage": "https://github.com/magic-modules/git-badges#readme",
   "devDependencies": {
     "@magic-modules/pre": "github:magic-modules/pre",
     "@magic-themes/docs": "github:magic-themes/docs",
