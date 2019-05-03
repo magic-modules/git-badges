@@ -13,10 +13,16 @@ const GitBadges = props => {
       to: `https://travis-ci.com/${v}`,
       src: `https://travis-ci.com/${v}.svg?branch=${branch}`,
     }),
-    appveyor: (v = project) => v && ({
-      to: `https://ci.appveyor.com/project/${v}/branch/${branch}`,
-      src: `https://img.shields.io/appveyor/ci/${v}/${branch}.svg`,
-    }),
+    appveyor: (v = project) => {
+      if (v) {
+        let [org, repo] = v.split('/')
+        org = org.replace(/-/g, '')
+        return {
+          to: `https://ci.appveyor.com/project/${org}/${repo}/branch/${branch}`,
+          src: `https://img.shields.io/appveyor/ci/${org}/${repo}/${branch}.svg`,
+        }
+      }
+    },
     coveralls: (v = project) => v && ({
       to: `https://coveralls.io/github/${v}`,
       src: `https://coveralls.io/repos/github/${v}/badge.svg`,
