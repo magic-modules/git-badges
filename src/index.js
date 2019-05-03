@@ -86,6 +86,9 @@ GitBadges.style = {
       display: 'inline-block',
       float: 'left',
     },
+    img: {
+      height: '20px',
+    },
   },
 }
 
