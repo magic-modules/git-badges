@@ -7,6 +7,7 @@ const GitBadges = props => {
     return
   }
 
+  CHECK_PROPS(props, GitBadges.props, 'GitBadges')
   const { project = false, branch = 'master' } = props
 
   // this pattern allows capture of props that are set to false and intended to hide badges.
@@ -91,5 +92,16 @@ GitBadges.style = {
     },
   },
 }
+
+GitBadges.props = [
+  { key: 'project', type: 'string' },
+  { key: 'npm', type: 'string' },
+  { key: 'travis', type: 'string' },
+  { key: 'coveralls', type: 'string' },
+  { key: 'greenkeeper', type: 'string' },
+  { key: 'appveyor', type: 'string' },
+  { key: 'snyk', type: 'string' },
+  { key: 'branch', type: 'string' },
+]
 
 module.exports = GitBadges
