@@ -1,6 +1,8 @@
 ## @magic-modules/git-badges
 
-git badges for your project. you can see them right below this line of text.
+git badges for your [@magic](https://magic.github.com/core) project. 
+
+[html docs / demo](https://magic-modules.github.io/git-badges)
 
 [![NPM version][npm-image]][npm-url]
 [![Linux Build Status][travis-image]][travis-url]
