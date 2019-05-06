@@ -1,6 +1,6 @@
 module.exports = {
   ROOT: 'example',
-  WEB_ROOT: '/gitbadges/',
+  WEB_ROOT: '/git-badges/',
   PUBLIC: 'docs',
   THEME: 'docs',
 }
