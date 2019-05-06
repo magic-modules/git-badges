@@ -30,20 +30,6 @@ npm install --save-exact magic-modules/git-badges
 ```
 
 #### usage:
-
-##### import:
-```javascript
-// assets/index.js:
-
-const GitBadges = require('@magic-modules/git-badges')
-
-module.exports = {
-  //... other entries
-  GitBadges,
-}
-```
-
-##### use tag
 ```javascript
 // in any component view
 const component = {
