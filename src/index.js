@@ -94,6 +94,8 @@ GitBadges.style = {
 }
 
 GitBadges.props = [
+  { type: 'string' },
+
   { key: 'project', type: 'string' },
   { key: 'npm', type: 'string' },
   { key: 'travis', type: 'string' },
