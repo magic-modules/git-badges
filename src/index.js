@@ -1,4 +1,5 @@
 const GitBadges = props => {
+  CHECK_PROPS(props, GitBadges.props, 'GitBadges')
   if (typeof props === 'string') {
     props = {
       project: props,
@@ -7,8 +8,7 @@ const GitBadges = props => {
     return
   }
 
-  CHECK_PROPS(props, GitBadges.props, 'GitBadges')
-  const { project = false, branch = 'master' } = props
+  const { project = false, branch = 'master', host = 'github' } = props
 
   // this pattern allows capture of props that are set to false and intended to hide badges.
   // it will also make every undefined prop[serviceName] default to project
@@ -44,11 +44,10 @@ const GitBadges = props => {
     ],
     [
       'coveralls',
-      (v = project) =>
-        v && {
-          to: `https://coveralls.io/github/${v}`,
-          src: `https://coveralls.io/repos/github/${v}/badge.svg`,
-        },
+      (v = project) => ({
+        to: `https://coveralls.io/${host}/${v}`,
+        src: `https://img.shields.io/coveralls/${host}/${v}/${branch}.svg`,
+      })
     ],
     [
       'greenkeeper',
@@ -62,8 +61,9 @@ const GitBadges = props => {
       'snyk',
       (v = project) =>
         v && {
-          to: `https://snyk.io/test/github/${v}`,
-          src: `https://snyk.io/test/github/${v}/badge.svg`,
+          to: `https://snyk.io/test/${host}/${v}`,
+          src: `https://img.shields.io/snyk/vulnerabilities/github/${v}.svg`,
+          // src: `https://img.shields.io/snyk/vulnerabilities/npm/${v}.svg`,
         },
     ],
   ]
@@ -97,6 +97,7 @@ GitBadges.props = [
   { type: 'string' },
 
   { key: 'project', type: 'string' },
+  { key: 'host', type: 'string' },
   { key: 'npm', type: 'string' },
   { key: 'travis', type: 'string' },
   { key: 'coveralls', type: 'string' },
