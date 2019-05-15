@@ -1,4 +1,4 @@
 import { is } from '@magic/test'
-import { GitBadges } from '../src/index.mjs'
+import * as GitBadges from '../src/index.mjs'
 
-export default [{ fn: () => GitBadges, expect: is.function, info: 'GitBadges is a function' }]
+export default [{ fn: () => GitBadges.View, expect: is.function, info: 'GitBadges.View is a function' }]

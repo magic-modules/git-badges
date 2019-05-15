@@ -1,5 +1,5 @@
-export const GitBadges = props => {
-  CHECK_PROPS(props, GitBadges.props, 'GitBadges')
+export const View = props => {
+  CHECK_PROPS(props, propTypes, 'GitBadges')
   if (typeof props === 'string') {
     props = {
       project: props,
@@ -78,7 +78,7 @@ export const GitBadges = props => {
   return ul({ class: 'GitBadges' }, urls.map(({ to, src }) => li([Link({ to }, Img({ src }))])))
 }
 
-GitBadges.style = {
+export const style = {
   '.GitBadges': {
     display: 'inline-block',
 
@@ -93,7 +93,7 @@ GitBadges.style = {
   },
 }
 
-GitBadges.props = [
+export const propTypes = [
   { type: 'string' },
 
   { key: 'project', type: 'string' },
@@ -106,5 +106,3 @@ GitBadges.props = [
   { key: 'snyk', type: 'string' },
   { key: 'branch', type: 'string' },
 ]
-
-export default GitBadges
