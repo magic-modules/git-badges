@@ -2,8 +2,11 @@
   "name": "@magic-modules/git-badges",
   "version": "0.0.1",
   "author": "Wizards & Witches",
-  "description": "shows git badges for a github/gitlab repository.",
-  "main": "src/index.js",
+  "description": "@magic module that shows git badges for a github/gitlab repository.",
+  "license": "AGPL-3.0",
+  "main": "src/index.mjs",
+  "module": "src/index.mjs",
+  "type": "module",
   "files": [
     "src"
   ],
@@ -28,9 +31,8 @@
     "@magic-modules/pre": "github:magic-modules/pre",
     "@magic-themes/docs": "github:magic-themes/docs",
     "@magic/core": "github:magic/core",
-    "@magic/test": "0.0.12"
+    "@magic/test": "0.1.1"
   },
-  "license": "AGPL-3.0",
   "contributors": [
     {
       "name": "jascha ehrenreich",
