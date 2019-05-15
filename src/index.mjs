@@ -1,4 +1,4 @@
-const GitBadges = props => {
+export const GitBadges = props => {
   CHECK_PROPS(props, GitBadges.props, 'GitBadges')
   if (typeof props === 'string') {
     props = {
@@ -107,4 +107,4 @@ GitBadges.props = [
   { key: 'branch', type: 'string' },
 ]
 
-module.exports = GitBadges
+export default GitBadges
