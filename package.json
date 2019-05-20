@@ -4,12 +4,8 @@
   "author": "Wizards & Witches",
   "description": "@magic module that shows git badges for a github/gitlab repository.",
   "license": "AGPL-3.0",
-  "main": "src/index.mjs",
-  "module": "src/index.mjs",
-  "type": "module",
-  "files": [
-    "src"
-  ],
+  "homepage": "https://github.com/magic-modules/git-badges#readme",
+  "engines" : { "node" : ">=12.2.0" },
   "scripts": {
     "start": "t -p",
     "format": "f -w --exclude docs",
@@ -26,7 +22,12 @@
   "bugs": {
     "url": "https://github.com/magic-modules/git-badges/issues"
   },
-  "homepage": "https://github.com/magic-modules/git-badges#readme",
+  "main": "src/index.mjs",
+  "module": "src/index.mjs",
+  "type": "module",
+  "files": [
+    "src"
+  ],
   "devDependencies": {
     "@magic-modules/pre": "github:magic-modules/pre",
     "@magic-themes/docs": "github:magic-themes/docs",
