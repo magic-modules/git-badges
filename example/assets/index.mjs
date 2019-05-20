@@ -1,3 +1,1 @@
-module.exports = {
-  GitBadges: require('../../src/'),
-}
+export * as GitBadges from '../../src/index.mjs'
