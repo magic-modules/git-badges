@@ -1,0 +1,13 @@
+{
+  "css": "sha384-1j1HRz/FO8B+3YNmNok6jI3MKRyIqvymonsBzC96mE9/BwH4XaDW0aVWZsyziI0w",
+  "js": "sha384-PBuX3CIfgmUbPQ0QKcoBgE8GCkXpjPlXHhVVDS267vYTLe3IjtgxhxDyJtvQGawT",
+  "pages": {
+    "/git-badges/": "sha384-8Qa7h9Wb5IQkH+cH5uPl/Z/Ukxdc0uCgdEeAhHDizhHwLGGuuB/O6xTnhn2+EE8A",
+    "/git-badges/404/": "sha384-l/sl/4/aUzXG3j+Qg7iStwdFCegDTmKPjv4IiXoeHdXXh4QLi7/bLORQ6eJUe3Vl"
+  },
+  "static": {
+    "/favicon.ico": "sha384-pf51ay6pZCj3+XlVCPmCKLDFpLj7QP+2heR+/n08WgS7Bve7JMkgubHOkwLzaTr+",
+    "/robots.txt": "sha384-ZwgVY7XZYXSd6ssJI+jnWTGZxyQ+hyQ22oNG+9jk9JOUbTf+Ti3aCVe7uZCs0MlM",
+    "/sitemap.xml": "sha384-0XzJHqyVTRxWui+WUB0I1oG/OblPQeBt9I99qeL1K0jclrFfLO+P5bXQN+V7MD9Y"
+  }
+}
