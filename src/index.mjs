@@ -47,7 +47,7 @@ export const View = props => {
       (v = project) => ({
         to: `https://coveralls.io/${host}/${v}`,
         src: `https://img.shields.io/coveralls/${host}/${v}/${branch}.svg`,
-      })
+      }),
     ],
     [
       'greenkeeper',
