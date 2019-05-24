@@ -93,16 +93,18 @@ export const style = {
   },
 }
 
-export const propTypes = [
-  { type: 'string' },
+export const propTypes = {
+  GitBadges: [
+    { type: 'string' },
 
-  { key: 'project', type: 'string' },
-  { key: 'host', type: 'string' },
-  { key: 'npm', type: 'string' },
-  { key: 'travis', type: 'string' },
-  { key: 'coveralls', type: 'string' },
-  { key: 'greenkeeper', type: 'string' },
-  { key: 'appveyor', type: 'string' },
-  { key: 'snyk', type: 'string' },
-  { key: 'branch', type: 'string' },
-]
+    { key: 'project', type: 'string' },
+    { key: 'host', type: 'string' },
+    { key: 'npm', type: 'string' },
+    { key: 'travis', type: 'string' },
+    { key: 'coveralls', type: 'string' },
+    { key: 'greenkeeper', type: 'string' },
+    { key: 'appveyor', type: 'string' },
+    { key: 'snyk', type: 'string' },
+    { key: 'branch', type: 'string' },
+  ],
+}
