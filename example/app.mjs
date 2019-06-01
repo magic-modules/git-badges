@@ -1,7 +1,7 @@
 export const state = {
   title: '@magic-modules/git-badges',
   description: 'shows git badges for a github/gitlab repository.',
-  logotext: 'git-badges',
+  logotext: 'GitBadges',
   menu: [
     { to: '/#installation', text: 'installation' },
     { to: '/#usage', text: 'usage' },
