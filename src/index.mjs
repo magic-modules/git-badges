@@ -1,5 +1,6 @@
 export const View = props => {
   CHECK_PROPS(props, propTypes, 'GitBadges')
+
   if (typeof props === 'string') {
     props = {
       project: props,
