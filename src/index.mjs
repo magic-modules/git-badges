@@ -80,17 +80,15 @@ export const View = props => {
 }
 
 export const style = {
-  '.GitBadges': {
-    display: 'inline-block',
+  display: 'inline-block',
 
-    li: {
-      margin: `0 .5em 0 0`,
-      display: 'inline-block',
-      float: 'left',
-    },
-    img: {
-      height: '20px',
-    },
+  li: {
+    margin: `0 .5em 0 0`,
+    display: 'inline-block',
+    float: 'left',
+  },
+  img: {
+    height: '20px',
   },
 }
 
