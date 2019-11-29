@@ -27,7 +27,7 @@ export const View = props => {
       (v = project) =>
         v && {
           to: `https://travis-ci.com/${v}`,
-          src: `https://travis-ci.com/${v}.svg?branch=${branch}`,
+          src: `https://img.shields.io/travis/com/${v}/${branch}`,
         },
     ],
     [
