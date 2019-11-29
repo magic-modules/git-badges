@@ -64,7 +64,6 @@ export const View = props => {
         v && {
           to: `https://snyk.io/test/${host}/${v}`,
           src: `https://img.shields.io/snyk/vulnerabilities/github/${v}.svg`,
-          // src: `https://img.shields.io/snyk/vulnerabilities/npm/${v}.svg`,
         },
     ],
   ]
