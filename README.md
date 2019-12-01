@@ -13,8 +13,8 @@ git badges for your [@magic](https://magic.github.com/core) project.
 
 [npm-image]: https://img.shields.io/npm/v/@magic-modules/git-badges.svg
 [npm-url]: https://www.npmjs.com/package/@magic-modules/git-badges
-[travis-image]: https://api.travis-ci.org/magic-modules/git-badges.svg?branch=master
-[travis-url]: https://travis-ci.org/magic-modules/git-badges
+[travis-image]: https://img.shields.io/travis/com/magic-modules/git-badges/master
+[travis-url]: https://travis-ci.com/magic-modules/git-badges
 [appveyor-image]: https://img.shields.io/appveyor/ci/magicmodules/git-badges/master.svg
 [appveyor-url]: https://ci.appveyor.com/project/magicmodules/git-badges/branch/master
 [coveralls-image]: https://coveralls.io/repos/github/magic-modules/git-badges/badge.svg
