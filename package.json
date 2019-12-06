@@ -1,6 +1,6 @@
 {
   "name": "@magic-modules/git-badges",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Wizards & Witches",
   "description": "@magic module that shows git badges for a github/gitlab repository.",
   "license": "AGPL-3.0",
