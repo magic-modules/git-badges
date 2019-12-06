@@ -1,6 +1,6 @@
 ## @magic-modules/git-badges
 
-git badges for your [@magic](https://magic.github.com/core) project. 
+git badges for your [@magic](https://magic.github.com/core) project.
 
 [html docs / demo](https://magic-modules.github.io/git-badges)
 
@@ -26,7 +26,7 @@ git badges for your [@magic](https://magic.github.com/core) project.
 
 #### install:
 ```bash
-npm install --save-exact magic-modules/git-badges
+npm install --save-exact @magic-modules/git-badges
 ```
 
 #### usage:

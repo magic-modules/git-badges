@@ -8,12 +8,7 @@ export const View = state => [
   ]),
 
   h2({ id: 'installation' }, 'installation'),
-  p(
-    'installation is done using npm. for now, all magic modules are living on github and not on npm.',
-  ),
-  p('note the missing @ before magic-modules.'),
-  p('this is how we install npm modules from github.'),
-  Pre(`npm install magic-modules/git-badges`),
+  Pre(`npm install @magic-modules/git-badges`),
 
   h2({ id: 'usage' }, 'usage'),
   p(
