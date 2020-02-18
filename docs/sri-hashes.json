@@ -1,13 +1,13 @@
 {
-  "css": "sha384-aWrEpcd5NPDzp5S+ZfNtfmoWZPTgUErrp4wYrpzF5QXLwMlq4spMlcO13PHgcImy",
-  "js": "sha384-3aVCy22Pzj1BACi8tAvIJCTbHItCvfljUT5JY9U1WbKE2N4KTV8gJZXV35b5JSu6",
+  "css": "sha384-FCjqG/8JSZCq+t4tv4rW2ElMhQMf1VViT46Rjmozvg+k+dgJ2QuNwnnxQLckrr4P",
+  "js": "sha384-EGN7ZfZUgFhU5o7+Sv4xzxNc6kmfpR/8HrhrzThmPj8X8aLIi/El6zaPY9q6K4qp",
   "pages": {
-    "/git-badges/": "sha384-zKX7iBIVD57tbSeCIObCSkEjT+FgU9TNw22qXM9ru6oWaLZggLOExBy7JVH8tEEA",
-    "/git-badges/404/": "sha384-Zh9gxIgLMYkTm3+frAoDC43bYSnLcy81fHmeLH6VaeGpGijGmawyft4BwTyjH8xI"
+    "/git-badges/": "sha384-cVPHuk5Af6iGLoPFUiZ5sZQVSZt8W9xlAWNo5A2wieFRGQI+0rfZYinLPfnw3t/F",
+    "/git-badges/404/": "sha384-rGwqTE4V5i1z5Av1d91fnwsVEAZxFL51NhAMwFU86BlRma25zp/7rGuBtN5yPGJc"
   },
   "static": {
     "/favicon.ico": "sha384-pf51ay6pZCj3+XlVCPmCKLDFpLj7QP+2heR+/n08WgS7Bve7JMkgubHOkwLzaTr+",
     "/robots.txt": "sha384-ZwgVY7XZYXSd6ssJI+jnWTGZxyQ+hyQ22oNG+9jk9JOUbTf+Ti3aCVe7uZCs0MlM",
-    "/sitemap.xml": "sha384-rucrj4WCDHc/D85idj+E2i5g7+jvR+R87z2gQtp0tZZQaP4MSljTuxQC7hA5a9k1"
+    "/sitemap.xml": "sha384-OOLlM4+1r4YScPPLhFSkE2TBV/Wp4VaiTs1hGj+HumZ2pG5G1pcgZSSORs+2wEB5"
   }
 }
