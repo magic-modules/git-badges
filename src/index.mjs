@@ -23,6 +23,13 @@ export const View = props => {
         },
     ],
     [
+        'node',
+        (v = project) =>
+          v && {
+            src: `https://img.shields.io/node/v/@magic/core`,
+          },
+    ],
+    [
       'travis',
       (v = project) =>
         v && {
