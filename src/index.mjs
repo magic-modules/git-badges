@@ -68,14 +68,16 @@ export const View = props => {
     ],
   ]
     .map(([name, fn]) => fn(props[name]))
-    .filter(a => a.to && a.src)
 
   // no badges to show
   if (!urls.length) {
     return
   }
 
-  return ul({ class: 'GitBadges' }, urls.map(({ to, src }) => li([Link({ to }, Img({ src }))])))
+  return ul(
+    { class: 'GitBadges' },
+    urls.map(({ to, src }) => to ? li(Link({ to }, Img({ src }))) : li(Img({ src }))),
+  )
 }
 
 export const style = {
