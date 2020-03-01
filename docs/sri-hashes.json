@@ -1,9 +1,9 @@
 {
   "css": "sha384-kUrAPicEg3qZBlaW32CA75F1Aj96PM+GUTu4MsGlIqZmNTBmJtsJifLdiKKOkWLy",
-  "js": "sha384-3prybC2BDKeWv0uW24Mc6/ym0VLMwqSJ5t2LwKHmZCDXGbIWYvtG59+iHR9AJCM1",
+  "js": "sha384-es9v3ia5bNGwUEp702kFMWtoboJAaf5TZjcU5bEAhWyXkiVEWCGbcr1G2qIxgqvg",
   "pages": {
-    "/git-badges/": "sha384-gO/+92aqx0qXv7nzPlnaSs2FF9ZBatMYlggkSD/1oAInrrdQZQimf649gcFJ8d0d",
-    "/git-badges/404/": "sha384-/XmpbgJUDO1Gyc6Ec6YsShh20a3AqjnKzESksRiHqyeUIk+S5KPpOh5IbdNj/Kn2"
+    "/git-badges/": "sha384-O3ZbKhvfWFmW34rgQUCgHPpZ1+vfJprHczqABLTBmwBaCoZDLjU9XefERG7vbkI4",
+    "/git-badges/404/": "sha384-z5aS7Y4RaJv6ujQpfX8/NKgLzVOkA4q8syPFxX44J3xpJtZkukPyMBR7zY0cPr8N"
   },
   "static": {
     "/favicon.ico": "sha384-pf51ay6pZCj3+XlVCPmCKLDFpLj7QP+2heR+/n08WgS7Bve7JMkgubHOkwLzaTr+",
