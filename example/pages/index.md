@@ -9,13 +9,13 @@ GitBadges component.
 
 ## installation
 
-<Pre>npm install @magic-modules/git-badges</Pre>
+`npm install @magic-modules/git-badges`
 
 ## usage
 
 in a page/component, just pass the badge user/project string for those badges you want to show:
 
-<Pre>
+```
 &lt;GitBadges
   // show all badges,
   // insert project into the various urls of the badges
@@ -30,22 +30,20 @@ in a page/component, just pass the badge user/project string for those badges yo
   greenkeeper="user/project" || false,
 
   // optional, master is default value
-  branch="master"
->&lt;/GitBadges>
-</Pre>
+  branch="master">
+</GitBadges>
+```
 
 ## gitlab / other git hosts
 
 to use gitlab or any other git host in the urls that need a git host to be set,
 simply pass a host prop to the GitBadges module
 
-<Pre>
-&lt;GitBadges project="gitlab-org/gitlab-repo" host="gitlab">&lt;/GitBadges>
-</Pre>
+`<GitBadges project="gitlab-org/gitlab-repo" host="gitlab"></GitBadges>`
 
 ## demo
 
-<Pre>&lt;GitBadges>magic-modules/git-badges&lt;/GitBadges></Pre>
+`<GitBadges>magic-modules/git-badges</GitBadges>`
 
 renders
 
