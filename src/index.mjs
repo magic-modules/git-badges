@@ -83,13 +83,13 @@ export const View = props => {
 
   return ul(
     { class: 'GitBadges' },
-    urls.map(({ to, src }) => to ? li(Link({ to }, Img({ src }))) : li(Img({ src }))),
+    urls.map(({ to, src }) => li([ to && Link({ to }), Img({ src, height: '23' })])),
   )
 }
 
 export const style = {
   display: 'inline-block',
-  margin: '1.2em 0',
+  margin: '15px 0',
 
   li: {
     margin: `0 .5em 0 0`,
@@ -97,7 +97,7 @@ export const style = {
     float: 'left',
   },
   img: {
-    height: '1.3em',
+    height: '23px',
   },
 }
 
