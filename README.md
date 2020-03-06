@@ -72,5 +72,9 @@ fix installation typo in readme
 * add margin to top and bottom
 * make image height relative to font-height
 
-##### 0.0.6 - unreleased
+##### 0.0.6
+make images a bit smaller (1.3em instead of 1.5em) 
+this makes them fit on a line if max-width is 1200px
+
+##### 0.0.7 - unreleased
 ...
