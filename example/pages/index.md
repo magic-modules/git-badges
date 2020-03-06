@@ -30,7 +30,7 @@ in a page/component, just pass the badge user/project string for those badges yo
 
   // optional, master is default value
   branch="master">
-</GitBadges>
+&lt;/GitBadges>
 ```
 
 ## gitlab / other git hosts
