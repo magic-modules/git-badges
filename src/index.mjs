@@ -97,7 +97,7 @@ export const style = {
     float: 'left',
   },
   img: {
-    height: '1.5em',
+    height: '1.3em',
   },
 }
 
