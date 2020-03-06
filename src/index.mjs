@@ -89,6 +89,7 @@ export const View = props => {
 
 export const style = {
   display: 'inline-block',
+  margin: '1.2em 0',
 
   li: {
     margin: `0 .5em 0 0`,
@@ -96,7 +97,7 @@ export const style = {
     float: 'left',
   },
   img: {
-    height: '20px',
+    height: '1.5em',
   },
 }
 
