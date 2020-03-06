@@ -68,5 +68,9 @@ fix installation typo in readme
 * add node badge
 * allow badges not to have a link
 
-##### 0.0.5 - unreleased
+##### 0.0.5
+* add margin to top and bottom
+* make image height relative to font-height
+
+##### 0.0.6 - unreleased
 ...
