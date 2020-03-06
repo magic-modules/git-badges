@@ -1,4 +1,3 @@
-
 # ${state.title}
 
 this is the
@@ -26,7 +25,7 @@ in a page/component, just pass the badge user/project string for those badges yo
   npm="user/project" || false,
   travis="user/project" || false,
   coveralls="user/project" || false,
-  appveyor="user/project" || false, // - will automatically be removed from the user (appveyor needs that)
+  appveyor="user/project" || false, // - will automatically be removed from the user.
   greenkeeper="user/project" || false,
 
   // optional, master is default value
