@@ -73,8 +73,12 @@ fix installation typo in readme
 * make image height relative to font-height
 
 ##### 0.0.6
-make images a bit smaller (1.3em instead of 1.5em) 
+make images a bit smaller (1.3em instead of 1.5em)
 this makes them fit on a line if max-width is 1200px
 
-##### 0.0.7 - unreleased
+##### 0.0.7
+component: images have a default height in their html tag now.
+style: image now has height of 23px and margin of 15px 0.
+
+##### 0.0.8 - unreleased
 ...
