@@ -80,5 +80,8 @@ this makes them fit on a line if max-width is 1200px
 component: images have a default height in their html tag now.
 style: image now has height of 23px and margin of 15px 0.
 
-##### 0.0.8 - unreleased
+##### 0.0.8
+fix: badges are clickable (again)
+
+##### 0.0.9 - unreleased
 ...
