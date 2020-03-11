@@ -83,7 +83,7 @@ export const View = props => {
 
   return ul(
     { class: 'GitBadges' },
-    urls.map(({ to, src }) => li([ to && Link({ to }), Img({ src, height: '23' })])),
+    urls.map(({ to, src }) => li([ to && Link({ to }, Img({ src, height: '23' }))])),
   )
 }
 
