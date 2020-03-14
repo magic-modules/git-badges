@@ -23,11 +23,11 @@ export const View = props => {
         },
     ],
     [
-        'node',
-        (v = project) =>
-          v && {
-            src: `https://img.shields.io/node/v/@magic/core`,
-          },
+      'node',
+      (v = project) =>
+        v && {
+          src: `https://img.shields.io/node/v/@${v}`,
+        },
     ],
     [
       'travis',
@@ -58,14 +58,6 @@ export const View = props => {
       }),
     ],
     [
-      'greenkeeper',
-      (v = project) =>
-        v && {
-          to: `https://greenkeeper.io`,
-          src: `https://badges.greenkeeper.io/${v}.svg`,
-        },
-    ],
-    [
       'snyk',
       (v = project) =>
         v && {
@@ -73,8 +65,7 @@ export const View = props => {
           src: `https://img.shields.io/snyk/vulnerabilities/github/${v}.svg`,
         },
     ],
-  ]
-    .map(([name, fn]) => fn(props[name]))
+  ].map(([name, fn]) => fn(props[name]))
 
   // no badges to show
   if (!urls.length) {
@@ -83,7 +74,7 @@ export const View = props => {
 
   return ul(
     { class: 'GitBadges' },
-    urls.map(({ to, src }) => li([ to && Link({ to }, Img({ src, height: '23' }))])),
+    urls.map(({ to, src }) => li([to && Link({ to }, Img({ src, height: '23' }))])),
   )
 }
 
@@ -110,7 +101,6 @@ export const propTypes = {
     { key: 'npm', type: 'string' },
     { key: 'travis', type: 'string' },
     { key: 'coveralls', type: 'string' },
-    { key: 'greenkeeper', type: 'string' },
     { key: 'appveyor', type: 'string' },
     { key: 'snyk', type: 'string' },
     { key: 'branch', type: 'string' },
