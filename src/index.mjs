@@ -9,7 +9,17 @@ export const View = props => {
     return
   }
 
-  const { project = false, branch = 'master', host = 'github' } = props
+  const { branch = 'master', host = 'github' } = props
+  let { project = false } = props
+
+  let at = ''
+  let libname = project
+  if (project.startsWith('@')) {
+    at = '@'
+    project = project.substr(1)
+  } else {
+    libname = project.split('/')[1]
+  }
 
   // this pattern allows capture of props that are set to false and intended to hide badges.
   // it will also make every undefined prop[serviceName] default to project
@@ -18,22 +28,22 @@ export const View = props => {
       'npm',
       (v = project) =>
         v && {
-          to: `https://www.npmjs.com/package/@${v}`,
-          src: `https://img.shields.io/npm/v/@${v}?color=blue`,
+          to: `https://www.npmjs.com/package/${libname}`,
+          src: `https://img.shields.io/npm/v/${at}${v}?color=blue`,
         },
     ],
     [
       'node',
       (v = project) =>
         v && {
-          src: `https://img.shields.io/node/v/@${v}?color=blue`,
+          src: `https://img.shields.io/node/v/${at}${v}?color=blue`,
         },
     ],
     [
       'license',
       (v = project) =>
         v && {
-          src: `https://img.shields.io/npm/l/@${v}?color=blue`,
+          src: `https://img.shields.io/npm/l/${at}${v}?color=blue`,
         },
     ],
     [
