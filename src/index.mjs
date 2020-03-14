@@ -19,14 +19,21 @@ export const View = props => {
       (v = project) =>
         v && {
           to: `https://www.npmjs.com/package/@${v}`,
-          src: `https://img.shields.io/npm/v/@${v}.svg`,
+          src: `https://img.shields.io/npm/v/@${v}?color=blue`,
         },
     ],
     [
       'node',
       (v = project) =>
         v && {
-          src: `https://img.shields.io/node/v/@${v}`,
+          src: `https://img.shields.io/node/v/@${v}?color=blue`,
+        },
+    ],
+    [
+      'license',
+      (v = project) =>
+        v && {
+          src: `https://img.shields.io/npm/l/@${v}?color=blue`,
         },
     ],
     [
@@ -74,7 +81,19 @@ export const View = props => {
 
   return ul(
     { class: 'GitBadges' },
-    urls.map(({ to, src }) => li([to && Link({ to }, Img({ src, height: '23' }))])),
+    urls.map(({ to, src }) => {
+      if (!src) {
+        return
+      }
+
+      const img = Img({ src, height: '23' })
+
+      if (to) {
+        return li(Link({ to }, img))
+      }
+
+      return li(img)
+    }),
   )
 }
 
@@ -99,9 +118,11 @@ export const propTypes = {
     { key: 'project', type: 'string' },
     { key: 'host', type: 'string' },
     { key: 'npm', type: 'string' },
+    { key: 'node', type: 'string' },
+    { key: 'license', type: 'string' },
     { key: 'travis', type: 'string' },
-    { key: 'coveralls', type: 'string' },
     { key: 'appveyor', type: 'string' },
+    { key: 'coveralls', type: 'string' },
     { key: 'snyk', type: 'string' },
     { key: 'branch', type: 'string' },
   ],
