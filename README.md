@@ -83,5 +83,9 @@ style: image now has height of 23px and margin of 15px 0.
 ##### 0.0.8
 fix: badges are clickable (again)
 
-##### 0.0.9 - unreleased
+##### 0.0.9 
+* greenkeeper shutting down, removed badge.
+* added license badge
+
+##### 0.0.10 - unreleased
 ...
