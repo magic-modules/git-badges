@@ -42,11 +42,13 @@ simply pass a host prop to the GitBadges module
 
 ## demo
 
-`<GitBadges>magic-modules/git-badges</GitBadges>`
+this demo also shows how to use npm @org/repository names.
+
+`<GitBadges>@magic-modules/git-badges</GitBadges>`
 
 renders
 
-<GitBadges>magic-modules/git-badges</GitBadges>
+<GitBadges>@magic-modules/git-badges</GitBadges>
 
 ## source
 
