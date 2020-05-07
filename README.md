@@ -87,5 +87,8 @@ fix: badges are clickable (again)
 * greenkeeper shutting down, removed badge.
 * added license badge
 
-##### 0.0.10 - unreleased
+##### 0.0.10 
+bump required node version to 14.2.0
+
+##### 0.0.11 - unreleased
 ...
