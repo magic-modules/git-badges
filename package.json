@@ -5,6 +5,7 @@
   "description": "@magic module that shows git badges for a github/gitlab repository.",
   "license": "AGPL-3.0",
   "homepage": "https://github.com/magic-modules/git-badges#readme",
+  "type": "module",
   "engines": {
     "node": ">=14.15.4"
   },
